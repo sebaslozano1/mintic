@@ -18,36 +18,29 @@
 <body class="antialiased">
 
 
+    @include('layouts.nav')
 
-    <nav >
-      <div class="container">
+<h1 style="margin: 10px 0px 0px 100px;">Bienvenido Encuestas mintic<a href="{{ url('/home') }}" > <img   data-toggle="tooltip" title="Ingresar administracción"  src="{{ asset('./images/admin.png')}}" alt="Buscar">
 
-        @if (Route::has('login'))
-        @auth
-        <a href="{{ url('/home') }}" >Administracción</a>
-        @else
-        <a href="{{ route('login') }}" >Administracción</a>
-
-        @if (Route::has('register'))
-        <a href="{{ route('register') }}">Register</a>
-        @endif
-        @endauth
-        @endif
-    </div>
-</nav>
+</a></h1>
 
 
 
-<h1 style="margin: 10px 0px 0px 100px;">Encuestas</h1>
 <div class="col-3" style="margin: 50px 0px 0px 100px;">
     <ul class="list-group">
-      <a href="/form/1"><li class="list-group-item">Formulario # 1</li></a>
-      <a href="/form/2"><li class="list-group-item">Formulario # 2</li></a>
-      <a href="/form/3"><li class="list-group-item">Formulario # 3</li></a>
-      <a href="/form/4"><li class="list-group-item">Formulario # 4</li></a>
-      <a href="/form/5"><li class="list-group-item">Formulario # 5</li></a>
+      <a href="/formViewUser"><li class="list-group-item">Formulario # 1</li></a>
+      <a href="/formViewUser"><li class="list-group-item">Formulario # 2</li></a>
+      <a href="/formViewUser"><li class="list-group-item">Formulario # 3</li></a>
+      <a href="/formViewUser"><li class="list-group-item">Formulario # 4</li></a>
+      <a href="/formViewUser"><li class="list-group-item">Formulario # 5</li></a>
   </ul>
 </div>
 
 </body>
+<script>
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip({ placement: "bottom"});   
+});
+</script>
+
 </html>

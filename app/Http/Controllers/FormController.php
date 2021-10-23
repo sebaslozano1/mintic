@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class HomeController extends Controller
+class FormController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -24,6 +24,20 @@ class HomeController extends Controller
     public function index()
     {
          $this->middleware('auth');
-        return view('home');
+        return view('form');
     }
+
+
+    public function view()
+    {
+         $this->middleware('auth');
+        return view('formView');
+    }
+
+
+    public function viewResult()
+    {
+        return view('result');
+    }
+
 }

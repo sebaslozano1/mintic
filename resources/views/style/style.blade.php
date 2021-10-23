@@ -9,10 +9,25 @@
 
   <style>
 
-  body {
+body {
     font-family: 'Nunito', sans-serif;
 }
 
+
+img {
+  width: 40px;
+  height:40px;
+  margin: 0px 0px 0px 50px;
+}
+
+a {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: blue;
+  font-size: 30px;
+
+}
 ul {
   list-style-type: none;
   margin: 0;
@@ -27,7 +42,7 @@ A:active {text-decoration:none;color:#ff0000;}
 A:hover {text-decoration:underline;color:gold;} 
 
 nav{
-    background-color: gold;
+    background-color: blue;
     width: 100%;
     height: 50px;
 }
