@@ -1,0 +1,12 @@
+ body {
+  font-family: 'Nunito', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: blue;
+  font-size: 30px;
+
+}
